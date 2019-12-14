@@ -24,3 +24,5 @@ Route::post('specials', 'ProductController@specials');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('reviews', 'ReviewController');
